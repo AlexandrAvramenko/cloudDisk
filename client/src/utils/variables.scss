@@ -1,0 +1,56 @@
+:root {
+  // colors
+  --primary: #165bfb;
+  --primary-l1: #9ebbff;
+  --primary-l2: #bfd2ff;
+  --primary-l3: #dee8ff;
+  --primary-l4: #eff4ff;
+  --primary-d1: #1348c2;
+  --primary-d2: #022a87;
+  --primary-d3: #011033;
+
+  --success: #61a854;
+  --success-l1: #8cc781;
+  --success-l2: #b9e3b1;
+  --success-l3: #def5da;
+  --success-l4: #f4fff2;
+  --success-d1: #44873b;
+  --success-d2: #286624;
+  --success-d3: #154d13;
+
+  --warning: #f29130;
+  --warning-l1: #ffb259;
+  --warning-l2: #ffdfb3;
+  --warning-l3: #ffefd6;
+  --warning-l4: #fff9f0;
+  --warning-d1: #e66205;
+  --warning-d2: #c75000;
+  --warning-d3: #a64200;
+
+  --danger: #d9534c;
+  --danger-l1: #f28179;
+  --danger-l2: #ffb9b3;
+  --danger-l3: #ffddd9;
+  --danger-l4: #fff6f5;
+  --danger-d1: #cc3833;
+  --danger-d2: #a62121;
+  --danger-d3: #8c1515;
+
+  --sky: #c5cbd6;
+  --sky-l1: #dfe2e8;
+  --sky-l2: #edf0f5;
+  --sky-l3: #f7f8fa;
+
+  --ink: #212736;
+  --ink-l1: #464c5c;
+  --ink-l2: #646e82;
+  --ink-l3: #9199ab;
+
+  // shadows
+  --box-shadow-menu: 0 2px 16px 0 rgba(33, 39, 54, 0.1),
+    0 0 0 1px rgba(33, 39, 54, 0.05);
+
+  --input-shadow: 0 1px 0 0 rgba(33, 39, 54, 0.12);
+
+  --input-inner-shadow: inset 0 1px 0 0 rgba(35, 33, 54, 0.08);
+}
