@@ -1,9 +1,10 @@
 import React from "react";
-import "./style.scss";
+import {Styled} from './Input.styles';
 
-const Input = (props) => {
+export const Input = (props) => {
+
   return (
-    <input
+    <Styled.Input
       type={props.type}
       value={props.value}
       onChange={(event) => props.setValue(event.target.value)}
@@ -13,4 +14,3 @@ const Input = (props) => {
   );
 };
 
-export default Input;

@@ -8,6 +8,7 @@ module.exports = (req, res, next) => {
 
   try {
     const token = req.headers.authorization.split(" ")[1];
+    console.log('token-auth-middleware', token)
     if (!token) {
       return res.status(401).json({ message: "Auth error" });
     }
@@ -15,6 +16,6 @@ module.exports = (req, res, next) => {
     req.user = decoded;
     next();
   } catch (e) {
-    return res.status(401).json({ message: "Please log in" });
+    return res.status(401).json({ message: "Auth failed" });
   }
 };

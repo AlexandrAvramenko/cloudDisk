@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const { Schema, model, ObjectId } = require("mongoose");
 
 const User = new Schema({

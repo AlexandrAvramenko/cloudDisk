@@ -34,8 +34,10 @@ router.post(
           .json({ message: `User with email ${email} already exist` });
       }
       const hashPassword = await bcrypt.hash(password, 8);
+
       const user = new User({ email, password: hashPassword });
-      await user.save();
+      await user .save()
+
       return res.json({ message: "User was created" });
     } catch (e) {
       console.log(e);
@@ -77,6 +79,9 @@ router.post("/login", async (req, res) => {
 router.get("/auth", authMiddleware, async (req, res) => {
   try {
     const user = await User.findOne({ _id: req.user.id });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
     const token = jwt.sign({ id: user.id }, config.get("secretKey"), {
       expiresIn: "1h",
     });
